@@ -3,7 +3,6 @@ const FILES_TO_CACHE = [
     "/index.html",
     "/styles.css",
     "/index.js",
-    "/icons/icon-152x152.png",
     "/icons/icon-192x192.png",
   ];
 
