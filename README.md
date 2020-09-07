@@ -15,12 +15,14 @@ MIT
 https://dashboard.heroku.com/apps/pure-citadel-19700
 
 ## Screenshot
-Application running while online.
-<img src="./public/icons/online.JPG" width="650" height="500">
-Appication is currently offline and an entry has been entered.
-<img src="./public/icons/offline.JPG" width="650" height="500">
-Application is back online and reloaded. Offline entry has been posted.
-<img src="./public/icons/offlinereload.JPG" width="650" height="500">
+### Application running while online.
+<img src="./public/icons/online.JPG" width="900" height="500">
+
+### Appication is currently offline and an entry has been entered. 
+<img src="./public/icons/offline.JPG"  width="900" height="500">
+
+### Application is back online and reloaded. Offline entry has been posted. 
+<img src="./public/icons/offlinereload.JPG"  width="900" height="500">
 
 
 ## Questions:
