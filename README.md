@@ -12,7 +12,7 @@ npm install
 MIT
 
 ## Heroku Link
-https://dashboard.heroku.com/apps/pure-citadel-19700
+https://pure-citadel-19700.herokuapp.com/
 
 ## Screenshot
 ### Application running while online.
