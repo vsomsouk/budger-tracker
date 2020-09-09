@@ -4,6 +4,7 @@ const FILES_TO_CACHE = [
     "/styles.css",
     "/index.js",
     "/icons/icon-192x192.png",
+    "/db.js"
   ];
 
 const CACHE_NAME = "static-cache-v2";
