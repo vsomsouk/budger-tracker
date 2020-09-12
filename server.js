@@ -15,20 +15,14 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-/*mongoose.connect("mongodb://localhost/budget", {
+
+const MONGO_URI = "mongodb+srv://vsomsouk:HELLO123!@cluster0.lydsp.mongodb.net/workout?retryWrites=true&w=majority";
+
+mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true 
-});*/
-
-var MONGODB_URI = process.env.MONGODB_URL || "mongodb://localhost/budget";
-const options = {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
-  family: 4 // Use IPv4, skip trying IPv6
-};
-mongoose.connect(MONGODB_URI,options)
+});
 
 // routes
 app.use(require("./routes/api.js"));
