@@ -16,13 +16,14 @@ app.use(express.json());
 app.use(express.static("public"));
 
 
-const MONGO_URI = "mongodb+srv://vsomsouk:HELLO123!@cluster0.lydsp.mongodb.net/workout?retryWrites=true&w=majority";
 
-mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/budget", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true 
-});
+})
+.catch(  err => {console.log(err)});
+console.log('mongoose is connected');
 
 // routes
 app.use(require("./routes/api.js"));
